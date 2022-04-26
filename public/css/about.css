@@ -1,0 +1,286 @@
+@font-face {
+  font-family: transformers;
+  src: url('../fonts/TransformersMovie-y9Ad.ttf');
+}
+
+/* About navbar */
+header nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.5);
+  font-family: transformers;
+}
+
+.hmpg-logo-txt{
+  display: flex;
+  margin-top: 10px;
+  padding-left: 15px;
+  font-size: 1.1em;
+  color: #111;
+  text-transform: uppercase;
+  cursor: pointer;
+} 
+
+.hmpg-logo-txt a{
+  margin-top: 20px;
+}
+.hmpg-logo-txt h2{
+  padding: 0 15px;
+}
+
+header nav .nav-bar{
+  padding-right: 1px;
+}
+
+ header nav .nav-bar ul li{
+  list-style: none;
+}
+
+header .nav-bar ul li a{
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 125px;
+  color: #111;
+}
+
+/* Background video */
+
+.bckgrnd-vid video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.95;
+}
+
+.vid-shadow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(116, 116, 177, 0.6);
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+}
+/* Optimus Primes Face */
+.optmsPrm-face{
+  margin-top: 0;
+  margin-left: 10px;
+}
+.optmsPrm-face img{
+  float: right;
+}
+
+/*--Animation of text--*/
+*{
+overflow: hidden;
+}
+
+.orgnz-wrap{
+ display: flex;
+ height: calc(100vh - 95px);
+ font-family: transformers;
+}
+
+.txtmvcrdts{
+flex: 1;
+}
+
+.optmsPrm-face{
+flex: 1;
+}
+
+.optmsprm-fcsd img{
+  position: absolute;
+  height: 890px;
+  width: 900;
+  font-weight: 900;
+  opacity: 0.8;
+}
+
+.txt-wrap{
+width: 85%;
+height: 100%;
+}
+
+.txt-move {
+  position: relative;
+  bottom: 0%;
+}
+ 
+.txt-move{ 
+    padding: 20px; 
+    color: #111;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+
+.txt-div-A h3{
+  font-size: 15px;
+  margin-left: 300px;
+}
+
+.txt-div-A p{
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.txt-div-B h3{
+  font-size: 15px;
+  margin-left: 275px;
+}
+
+.txt-div-B p{
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+.txt-div-C h3{
+  font-size: 15px;
+  margin-left: 250px;
+}
+
+.txt-div-C p{
+  font-size: 25px;
+  margin-left: 0px;
+}
+
+.txt-div-D h3{
+  font-size: 15px;
+  margin-left: 252px;
+}
+
+.txt-div-D p{
+  font-size: 20px;
+  margin-left: 0px;
+}
+
+.txt-div-E h3{
+  font-size: 15px;
+  margin-left: 260px;
+}
+
+.txt-div-E p{
+  font-size: 35px;
+  margin-left: 200px;
+}
+
+.txt-div-F h1{
+  font-size: 110px;
+  margin-left: 10px;
+}
+
+@keyframes slidev {
+  0% { bottom: 0; }
+  20% { bottom: 20%; }
+  30% { bottom: 30%; }
+  40% { bottom: 40%; }
+  50% { bottom: 50%; }
+  60% { bottom: 60%; }
+  70% { bottom: 70%; }
+  80% { bottom: 80%; }
+  90% { bottom: 90%; }
+  100% { bottom: 100%; }
+  100% { right: 0; }
+}
+.txt-move { animation: slidev linear 55s infinite; }
+.txt-move:hover { animation-play-state: paused; }
+
+
+@media only screen and (max-width: 890px){
+  header nav{
+    width: 100%;
+    position: fixed;
+  }
+
+  .burgerMenu{
+    display: block;
+  }
+
+  .burgerMenu.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .burgerMenu.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }    
+
+  .burgerMenu.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  nav .nav-bar ul{
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav .nav-bar ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav .nav-bar ul li a {
+    color: black;
+  }
+  .orgnz-wrap .txt-mvcrdts .txt-wrap .txt-move .txt-div,
+  .orgnz-wrap .txt-mvcrdts .txt-wrap .txt-move .txt-div-A,
+  .orgnz-wrap .txt-mvcrdts .txt-wrap .txt-move .txt-div-B, 
+  .orgnz-wrap .txt-mvcrdts .txt-wrap .txt-move .txt-div_C,
+  .orgnz-wrap .txt-mvcrdts .txt-wrap .txt-move .txt-div-D,
+  .orgnz-wrap .txt-mvcrdts .txt-wrap .txt-move .txt-div-E,
+  .orgnz-wrap .txt-mvcrdts .txt-wrap .txt-move .txt-div-F {
+    width: 100%;
+    font-size: .5rem;
+  }
+
+  .optmsPrm-face .optmsprm-fcsd{
+    display: none;
+  }
+  
+  .bckgrnd-vid video{
+    width: 100%;
+  }
+  
+}
+
+@media (max-width: 890px){
+  header nav{
+    width: 100%;
+    position: fixed;
+  }
+
+  .bckgrnd-vid video{
+    width: 100%;
+  }
+
+  .orgnz-wrap .txt-move{
+    width: 100%;
+  }
+
+  .txt-div-A p, .txt-div-B p, .txt-div-C p, .txt-div-D p{
+    font-size: 18px;
+  }
+
+  .txt-div-F h1{
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+  }
+}

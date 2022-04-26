@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="A-UX-Compatible" content="IE=edge">
+        <title>Autobots! - S.O.S</title>
+        <link rel="stylesheet" type="text/css" href="../css/sos.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <a href="../../index.html"><img src="../img/Autobots-Logo.png" width="120px"></a>
+                    <h2>TRANSFORMERS</h2>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="../../index.html">HOME</a> 
+                        <a href="about.html">ABOUT</a> 
+                        <a href="tribute.html">TRIBUTE</a> 
+                        <a href="sos.html">SOS</a> 
+                    </li>
+                </ul>
+                <div class="burgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="form-bckgrnd">
+            <div>
+                <form method="POST" class="form">
+                    <h1>NAME</h1>
+                    <input class="name" type="text" required>
+    
+                    <div class="email-div">
+                        <h1>EMAIL</h1>
+                        <input class="email" type="email" required>
+                    </div>
+    
+                        <h1>MESSAGE</h1>
+                        <textarea class="message" placeholder="" required></textarea>
+                    <br/>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase.js"></script>
+        <script src="../js/sos.js"></script>
+        <script src="../js/home.js"></script>
+    </body>
+</html>
