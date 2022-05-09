@@ -130,36 +130,36 @@ form button:hover{
 
 @media (max-width: 910px) {
     header{
-        position: fixed;
         width: 100%;
+        height: 70px;
     }
 
-    .nav-bar{
+    header .nav-bar{
         width: 100%;  
-        height: 70px; 
+        height: 100%;
     }
 
-    .nav-bar .logo h2{
-        font-size: 1.5rem;
+    header .nav-bar .logo a img{
+        height: 60px;
+        width: 60px;
+    }
+
+    header .nav-bar .logo h2{
+        font-size: 1.1rem;
         padding: 25px;
     }
 
-    .burgerMenu{
-        display: block;
+    header .nav-bar ul li{
+        display: flex;
+    }
+    header .nav-bar ul li a{
+        font-size: 0.4em;
     }
 
-    .burgerMenu.active .bar:nth-child(2){
-        opacity: 0;
+    .form-bckgrnd form{
+        margin-left: -150px;
+
     }
-
-    .burgerMenu.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }    
-
-    .burgerMenu.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
     .form-bckgrnd form button{
         margin: 0;
         padding: 0;
@@ -172,23 +172,49 @@ form button:hover{
         width: 95%;
     }
 
-    .nav-bar ul{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: pink;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
+}
+
+@media (max-width: 680px) {
+
+    header .nav-bar .logo a img {
+        height: 60px;
+        width: 60px;
+        z-index: 99;
     }
 
-    .nav-bar ul{
-        margin: 16px 0;
+    header .nav-bar .logo h2 {
+        font-size: 0.9rem;
+        padding: 25px;
     }
 
-    .nav-bar ul.active{
-        left: 0;
+    header .nav-bar ul{
+        padding: 0;
+        margin: 0;
     }
+
+    header .nav-bar ul li {
+        display: flex;
+    }
+
+    header .nav-bar ul li a {
+        font-size: 0.4em;
+    }
+
+    .form-bckgrnd form {
+        margin-left: -150px;
+
+    }
+
+    .form-bckgrnd form button {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+
+    }
+
+    .form-bckgrnd form input,
+    .form-bckgrnd form textarea {
+        width: 95%;
+    }
+
 }
